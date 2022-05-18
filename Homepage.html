@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Homepage.css" />
+    <title>Car Garage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div style="font-size: 32px;" class="name">Car Garage</div>
+        <div class="searchbox">
+            <div class="search">
+                <form action="#">
+                    <input style="padding: 10px;" type="text" placeholder=" Search Your Dream Car...." name="search">
+                </form>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <div class="menu">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="#contact">About</a></li>
+                <li class="services">
+                    <a href="/">Services</a>
+                </li>
+                <li><a href="collections.html">Collections</a></li>
+                <li>
+                    <a href="/login.html">Login</a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <!--  <section style="background-color: rgb(16, 97, 163);" class="backgroundimage"> -->
+        <!-- <img src="Project Images/wp8572556-red-range-rover-wallpapers.jpg" style="height: 62  0 px ; width: 100%; margin-bottom: -60px; margin-top: -40px;"> -->
+        <!-- Slideshow container -->
+<div class="slideshow-container" style="height: 500px; width: 100%; padding-top: 20px;">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="/Project Images/_etta.jpg" style="border-radius: 10px; width: 200%; height: 490px;">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/Project Images/_544303.jpg" style="width: 100%; height: 490px; border-radius: 10px;">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/Project Images/image.jpg" style="width:100%; border-radius: 10px; height: 490px;">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+    
+    <secction class="header">
+        <p style="color: black;">Featured Cars of Budget Segment</p>
+    <!-- </secction> -->
+    <script>
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+    </script>
+    <div class="aling">
+        <div class="wrapper">
+            <a href="Mahindra.html">
+                <div class="cards_wrap">
+                    <div class="card_item">
+                        <div class="card_inner">
+                            <div class="card_top">
+                                <img src="/Project Images/land-rover-range-rover-2018-2019-01.jpg" style="border-radius: 10px;" alt="car" />
+                            </div>
+                            <div class="card_bottom">
+                                <div class="card_price">
+                                    &#x20B9;12 Lakhs
+                                </div>
+                                <div class="card_info">
+                                    <p class="title">Mahindra XUV700</p>
+                                </div>
+                            </div>
+                        </div>
+            </a>
+            </div>
+            <div class="card_item">
+                <a href="/honda.html">
+                    <div class="card_inner">
+                        <div class="card_top">
+                            <img src="Project Images/accord.jpg" style="height: 190px; border-radius: 10px;" />
+                        </div>
+                        <div class="card_bottom">
+                            <div class="card_price">
+                                &#x20B9;12 Lakhs
+                            </div>
+                            <div class="card_info">
+                                <p class="title">Honda Amaze</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card_item">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <img src="https://imgd.aeplcdn.com/600x337/cw/ec/40901/MG-Hector-Exterior-161734.jpg?wm=1" style="height: 190px; border-radius: 10px;" /> </div>
+                    <div class="card_bottom">
+                        <div class="card_price">
+                            &#x20B9;10.5 Lakhs
+                        </div>
+                        <div class="card_info">
+                            <p class="title">MG Hector</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            <secction class="header">
+                <div class="center">
+                    <p style="color: black;">Featured Cars of Luxry Segment</p>
+                </div>
+            </secction>
+            <div class="wrapper">
+                <a href="mercedes.html">
+                <div class="cards_wrap">
+                    <div class="card_item">
+                        <div class="card_inner">
+                            <div class="card_top">
+                                <img src="Project Images/_049701.jpg" style="height: 190px; border-radius: 10px;" alt="car" />
+                            </div>
+                            <div class="card_bottom">
+                                <div class="card_price">
+                                    &#x20B9;2 Crore
+                                </div>
+                                <div class="card_info">
+                                    <p class="title">Mercedes Benz </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_inner">
+                            <a href="rangrover.html">
+                            <div class="card_top">
+                                <img src="Project Images/_544303.jpg" style="height: 190px; border-radius: 10px;" />
+                            </div>
+                            <div class="card_bottom">
+                               
+                                <div class="card_price">
+                                    &#x20B9;3 Crore
+                                </div>
+                                <div class="card_info">
+                                    <p class="title">Range Rover Vellar</p>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="card_item">
+                       
+                        <div class="card_inner">
+                            <a href="bmw.html">
+                            <div class="card_top">
+                                <img src="Project Images/_859161.jpg" style="height: 185px; border-radius: 10px; " /> </div>
+                            <div class="card_bottom">
+                                <div class="card_price">
+                                    &#x20B9;2.5 Crore
+                                </div>
+                                <div class="card_info">
+                                    <p class="title">Bmw X7 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="brands">
+                    <h3 style="margin-left: -500px;">Our Brand Partner's</h3>
+                    <div class="brandlogo">
+                        <img src="Project Images/Screenshot (2).png" style="height: 250px; width: 70%; margin-left: 30px; " alt="">
+                    </div>
+                </div>
+                <section class="contact-area" id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3">
+                                <div class="contact-content text-center">
+                                    <a href="#"><img style="margin-left: 550px;" id="logo" src="Project Images/auto-sports-car-dealership-logo-silhouette-icon-shape-motor-vehicle-auto-shop-sports-car-dealership-logo-line-138820566.jpg" alt="logo"></a>
+                                    <p>One stop platform where you can Buy, Sell or Rent Cars from price segment of your choice </p>
+                                    <div class="hr">
+                                        <!-- <h6>We are avilabe offline too at Chandigarh.</h6> -->
+                                        <!-- <h6>+01 2345 6789 12<span>|</span>+01 2345 6789 12</h6> -->
+                                        <div class="energy">
+                                            <h3 style="margin-left: -420px;"> Meet The Energies Behind This Platform</h3>
+                                        </div>
+                                        <div class="profile">
+                                            <a href="https://www.instagram.com/smalltown_gabru/" target="_blank"><img src="Project Images/profile-pic (6).png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://instagram.com/aryyyannn___?utm_medium=copy_link" target="_blank"><img src="Project Images/profile-pic (1)_auto_x2-modified.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://instagram.com/arhyam_16?utm_medium=copy_link" target="_blank"><img src="Project Images/WhatsApp Image 2022-01-10 at 21.06.44-modified.png" alt=""></a>
+                                            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://www.instagram.com/ashutosh_9119/" target="_blank"><img src="Project Images/f20924896.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- =============== 1.9 Footer Area Start ====================-->
+                <footer>
+                    <p>Copyright &copy; 2022 @Alpha X</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

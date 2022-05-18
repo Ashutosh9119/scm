@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+    background: #5f2c82;
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);
+    background: linear-gradient(to right, #49a09d, #5f2c82);}
+/* * {box-sizing: border-box} */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  display: flex;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+
+/* Float signup buttons and add an equal width */
+ .signupbtn {
+  /* float: left; */
+  width: 30%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 50px;
+  margin-top: 2%;
+    height: 550px;
+    width: 530px;
+    margin-left: 10px;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  /* display: table; */
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body style="margin-left: 25%;">
+
+<!-- <form action="/action_page.php" style="border:1px solid #ccc"> -->
+  <div class="container" >
+    <h1 style="margin-left: 34%;">Sign Up</h1>
+    <p style="margin-left: 20%; margin-bottom: 30px;">Please fill in this form to create an account.</p>
+    <!-- <hr> -->
+
+    <label style="margin-left: 22%; width:50%;" for="email"><b>Email</b></label>
+    <input style="margin-left: 22%; width:50%;" type="text" placeholder="Enter Email" name="email" required>
+
+    <label style="margin-left: 22%; width:50%;" for="psw"><b>Password</b></label>
+    <input style="margin-left: 22%; width:50%;" type="password" placeholder="Enter Password" name="psw" required>
+
+    <label style="margin-left: 22%; width:50%;" for="psw-repeat"><b>Repeat Password</b></label>
+    <input style="margin-left: 22%; width:50%;" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <label>
+      <input style="margin-left: 30%;"  type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p style="margin-left: 20%;" >By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div  style="margin-left: 35%;" class="clearfix">
+      <button style="width: 150px;" type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+
+
+</body>
+</html>
